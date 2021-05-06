@@ -1035,8 +1035,12 @@ h4 {
     color: #3f3f3f!important;
 }
 
+#bloc-8 p {
+    margin-top: 10px;
+}
+
 .black-background {
-    background-color: rgba(248, 147, 99, 1);
+    background-color: #F3976C;
     padding: 10px;
     border-radius: 15px;
 }
@@ -1058,9 +1062,13 @@ h4 {
 }
 
 .ltc-white {
-    color: #333333!important;
+    color: #3f3f3f!important;
 }
 
 .tc-black {
     color: #3f3f3f;
+}
+
+.footer_socials {
+    margin-bottom: 10px;
 }
