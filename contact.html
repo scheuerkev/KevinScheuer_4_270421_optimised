@@ -68,13 +68,13 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
                     <ul class="site-navigation nav navbar-nav">
-                        <li><a href="index.html" alt="Lien vers la page d'accueil de La chouette agence"
+                        <li><a href="index.html" title="Lien vers la page d'accueil de La chouette agence"
                                aria-label="Se rendre à la page d'accueil de La chouette agence">Accueil</a></li>
                         <!--Ajout d'un élément de menu-->
-                        <li><a href="index.html#bloc-4-portfolio" alt="Découvrez les réalisations de La chouette agence"
+                        <li><a href="index.html#bloc-4-portfolio" title="Découvrez les réalisations de La chouette agence"
                                aria-label="Découvrir les projets web menés par La chouette agence">Nos réalisations</a>
                         </li>
-                        <li><a href="contact.html" alt="Lien vers la page de contact de La chouette agence"
+                        <li><a href="contact.html" title="Lien vers la page de contact de La chouette agence"
                                aria-label="Se rendre à la page de contact de La chouette agence">Contact</a></li>
                     </ul>
                 </div>
@@ -107,31 +107,30 @@
             <div class="container bloc-lg">
                 <div class="row">
                     <section class="col-sm-6">
-                        <form id="form_1" novalidate success-msg="Your message has been sent."
-                              fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+                        <form class="form_1" action="./includes/form_1.php" method="post">
                             <div class="form-group">
-                                <label>
-                                    Nom
+                                <label for="name">
+                                    Nom :
                                 </label>
-                                <input id="name" class="form-control" required/>
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Nom & Prénom" maxlength="100" required/>
                             </div>
                             <div class="form-group">
-                                <label>
-                                    Adresse email
+                                <label for="email">
+                                    Adresse email :
                                 </label>
-                                <input id="email" class="form-control" type="email" required/>
+                                <input id="email" type="email" name="email" class="form-control" placeholder="votre@email.xyz" maxlength="200" required/>
                             </div>
                             <div class="form-group">
-                                <label>
+                                <label for="input_504">
                                     Comment nous avez-vous connu ?
                                 </label>
-                                <input class="form-control" type="email" required id="input_504"/>
+                                <input id="input_504" type="text" name="input_504" class="form-control" placeholder="Dites-nous tout !" maxlength="500" required/>
                             </div>
                             <div class="form-group">
-                                <label>
-                                    Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-                                </label><textarea id="message" class="form-control" rows="4" cols="50"
-                                                  required></textarea>
+                                <label for="message">
+                                    Brief de votre projet (Ajoutez autant de détails que nécessaire) : <br>
+                                </label><textarea id="message" name="message" class="form-control" rows="4" cols="50"
+                                                  placeholder="Vous avez l'idée, nous avons les outils et le savoir-faire" maxlength="5000" required></textarea>
                             </div>
                             <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
                                     type="submit">
@@ -168,21 +167,21 @@
                     <div class="row row-no-gutters social footer_socials">
                         <div class="col-sm-3">
                             <div class="text-center">
-                                <a class="social" href="https://twitter.com" alt="Lien Twitter de La chouette agence"
+                                <a class="social" href="https://twitter.com" title="Lien Twitter de La chouette agence"
                                    aria-label="Aller sur le compte Twitter de La chouette agence"><span
                                         class="fa fa-twitter icon-md"></span></a>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="text-center">
-                                <a class="social" href="https://facebook.com" alt="Lien Facebook de La chouette agence"
+                                <a class="social" href="https://facebook.com" title="Lien Facebook de La chouette agence"
                                    aria-label="Aller sur la page Facebook de La chouette agence"><span
                                         class="fa fa-facebook icon-md"></span></a>
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="text-center">
-                                <a class="social" href="https://dribble.com" alt="Lien Dribble de La chouette agence"
+                                <a class="social" href="https://dribble.com" title="Lien Dribble de La chouette agence"
                                    aria-label="Aller sur la page Dribble de La chouette agence"><span
                                         class="fa fa-dribbble icon-md"></span></a>
                             </div>
@@ -190,7 +189,7 @@
                         <div class="col-sm-3">
                             <div class="text-center">
                                 <a class="social" href="https://instagram.com"
-                                   alt="Lien Instagram de La chouette agence"
+                                   title="Lien Instagram de La chouette agence"
                                    aria-label="Aller sur la page Instagram de La chouette agence"><span
                                         class="fa fa-instagram icon-md"></span></a>
                             </div>
@@ -201,15 +200,15 @@
                         Nos partenaires :
                     </p>
                     <div class="ltc-white text-center">
-                        <a class="bold-link" href="voiture.com" alt="Lien vers le site Voiture.com"
+                        <a class="bold-link" href="voiture.com" title="Lien vers le site Voiture.com"
                            aria-label="Aller sur le site de Voiture.com, partenaire de La chouette agence">voiture.com</a>
                         |
-                        <a class="bold-link" href="pizza.com" alt="Lien vers le site Pizza.com"
+                        <a class="bold-link" href="pizza.com" title="Lien vers le site Pizza.com"
                            aria-label="Aller sur le site de Pizza.com, partenaire de La chouette agence">pizza.com</a> |
-                        <a class="bold-link" href="matoiture.com" alt="Lien vers le site Matoirue.com"
+                        <a class="bold-link" href="matoiture.com" title="Lien vers le site Matoirue.com"
                            aria-label="Aller sur le site de Matoiture.com, partenaire de La chouette agence">matoiture.com</a>
                         |
-                        <a class="bold-link" href="immobilierseo.com" alt="Lien vers le site ImmobilierSeo.com"
+                        <a class="bold-link" href="immobilierseo.com" title="Lien vers le site ImmobilierSeo.com"
                            aria-label="Aller sur le site d'ImmobilierSeo.com, partenaire de La chouette agence">immobilierseo.com</a>
                     </div>
                 </div>
